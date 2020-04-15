@@ -38,9 +38,12 @@ export class OrdersComponent implements OnInit {
     let data = this.form.value;
     console.log(data);
 
-    // this.ordersService.createCoffeeOrder(data).then(res => {
-    //   /*do something here....maybe clear the form or give a success message*/
-    // });
+    this.ordersService.createCoffeeOrder(data);
+  }
+
+  clearForm():void{
+    this.form.value.coffeeOrder =null;
+    
   }
 
 }
