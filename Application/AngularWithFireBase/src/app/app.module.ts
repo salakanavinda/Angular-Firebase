@@ -11,10 +11,16 @@ import { AngularFirestoreModule } from "@angular/fire/firestore";
 
 import { environment } from "src/environments/environment";
 import { OrdersService } from './services/orders.service';
+import { CustomerDetailsComponent } from './components/customer-details/customer-details.component';
+import { CustomersListComponent } from './components/customers-list/customers-list.component';
+import { CreateCustomerComponent } from './components/create-customer/create-customer.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CustomerDetailsComponent,
+    CustomersListComponent,
+    CreateCustomerComponent
   ],
   imports: [
     BrowserModule,
