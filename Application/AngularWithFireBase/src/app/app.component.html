@@ -1,5 +1,11 @@
-<div class="container">
-  <div class="row">
-      <app-orders class="col s6"></app-orders>
+<div class="container-fluid">
+  <div style="color: blue;">
+    <h1>{{title}}</h1>
   </div>
+ 
+  <nav>
+    <a routerLink="customers" class="btn btn-primary active" role="button" routerLinkActive="active">Customers</a>
+    <a routerLink="add" class="btn btn-primary active" role="button" routerLinkActive="active">Add</a>
+  </nav>
+  <router-outlet></router-outlet>
 </div>

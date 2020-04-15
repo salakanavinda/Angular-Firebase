@@ -1,1 +1,21 @@
-<p>create-customer works!</p>
+<h3>Create Customer</h3>
+<div [hidden]="submitted" style="width: 300px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" required [(ngModel)]="customer.name" name="name">
+    </div>
+ 
+    <div class="form-group">
+      <label for="age">Age</label>
+      <input type="text" class="form-control" id="age" required [(ngModel)]="customer.age" name="age">
+    </div>
+ 
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>
+ 
+<div [hidden]="!submitted">
+  <h4>You submitted successfully!</h4>
+  <button class="btn btn-success" (click)="newCustomer()">Add</button>
+</div>

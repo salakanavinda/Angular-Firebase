@@ -1,1 +1,19 @@
-<p>customer-details works!</p>
+<div *ngIf="customer">
+    <div>
+      <label>First Name: </label> {{customer.name}}
+    </div>
+    <div>
+      <label>Age: </label> {{customer.age}}
+    </div>
+    <div>
+      <label>Active: </label> {{customer.active}}
+    </div>
+   
+    <span class="button is-small btn-primary" *ngIf='customer.active' (click)='updateActive(false)'>Inactive</span>
+   
+    <span class="button is-small btn-primary" *ngIf='!customer.active' (click)='updateActive(true)'>Active</span>
+   
+    <span class="button is-small btn-danger" (click)='deleteCustomer()'>Delete</span>
+   
+    <hr/>
+  </div>

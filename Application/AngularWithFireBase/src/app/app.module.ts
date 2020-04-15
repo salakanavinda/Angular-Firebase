@@ -15,6 +15,7 @@ import { OrdersService } from './services/orders.service';
 import { CustomerDetailsComponent } from './components/customer-details/customer-details.component';
 import { CustomersListComponent } from './components/customers-list/customers-list.component';
 import { CreateCustomerComponent } from './components/create-customer/create-customer.component';
+import { Customer } from './entity/customer';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,7 @@ import { CreateCustomerComponent } from './components/create-customer/create-cus
     AngularFireDatabaseModule
     
   ],
-  providers: [OrdersService],
+  providers: [OrdersService,Customer],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

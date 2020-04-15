@@ -1,1 +1,7 @@
-<p>customers-list works!</p>
+<h1>Customers</h1>
+<div *ngFor="let customer of customers" style="width: 300px;">
+  <app-customer-details [customer]='customer'></app-customer-details>
+</div>
+<div style="margin-top:20px;">
+  <button type="button" class="button btn-danger" (click)='deleteCustomers()'>Delete All</button>
+</div>
