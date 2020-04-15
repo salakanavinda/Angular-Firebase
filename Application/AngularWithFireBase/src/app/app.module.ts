@@ -3,23 +3,28 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { OrdersComponent } from './components/orders/orders.component';
-import { OrderListComponent } from './components/order-list/order-list.component';
 
 import { ReactiveFormsModule } from "@angular/forms";
 
+import { AngularFireModule } from "@angular/fire";
+import { AngularFirestoreModule } from "@angular/fire/firestore";
+
+import { environment } from "src/environments/environment";
+import { OrdersService } from './services/orders.service';
+
 @NgModule({
   declarations: [
-    AppComponent,
-    OrdersComponent,
-    OrderListComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AngularFirestoreModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig)
+    
   ],
-  providers: [],
+  providers: [OrdersService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
