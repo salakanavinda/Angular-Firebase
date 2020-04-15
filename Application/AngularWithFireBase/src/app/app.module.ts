@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { OrdersComponent } from './components/orders/orders.component';
 import { OrderListComponent } from './components/order-list/order-list.component';
 
+import { ReactiveFormsModule } from "@angular/forms";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +16,8 @@ import { OrderListComponent } from './components/order-list/order-list.component
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
