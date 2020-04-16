@@ -5,14 +5,14 @@
 export const environment = {
   production: false,
   firebaseConfig : {
-    apiKey: "AIzaSyAl21HxRKaXSql5eCoHKT58_7Y8uw6Njzs",
-    authDomain: "agulartest.firebaseapp.com",
-    databaseURL: "https://agulartest.firebaseio.com",
-    projectId: "agulartest",
-    storageBucket: "agulartest.appspot.com",
-    messagingSenderId: "585634946757",
-    appId: "1:585634946757:web:cd9ffbbb552864c4351aac",
-    measurementId: "G-WXJFQ8B695"
+    apiKey: "",
+    authDomain: "",
+    databaseURL: "",
+    projectId: "",
+    storageBucket: "",
+    messagingSenderId: "",
+    appId: "",
+    measurementId: ""
   }
 };
 
