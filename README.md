@@ -1,6 +1,8 @@
 # Angular-Firebase
 For learning angular with firebase features
 
+firebase npm is npm i --save firebase @angular/fire
+
 Test how to connect angular and firebase realtime database with this project
 
 1) clone this project
